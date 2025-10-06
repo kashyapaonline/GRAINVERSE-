@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Timber Processing</title>
+  <meta name="description" content="Upgrading local timber processing technology — shared hubs, training, sustainable practices and design collaboration.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS.css for scroll animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-sm sticky top-0 z-50 animate__animated animate__fadeInDown">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+      <a href="#" class="flex items-center gap-3">
+        <!-- <div class="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-bold text-xl">LT</div> -->
+         <!-- Logo Image -->
+<div class="w-10 h-10 rounded-md overflow-hidden flex items-center justify-center bg-white">
+  <img src="image/logo.jpg" alt="Lanka Woodcraft Logo" class="w-full h-full object-cover">
+</div>
+
+        <div>
+          <h1 class="text-lg font-semibold">LANKA WOODCRAFT</h1>
+          
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-primary">HOME</a>
+        <a href="#hubs" class="hover:text-primary">BLOGGER</a>
+        <a href="#training" class="hover:text-primary">NEW</a>
+      
+        <a href="#contact" class="px-4 py-2 rounded-md bg-primary text-white">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="menuBtn" class="p-2 rounded-md border border-slate-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="#about" class="hover:text-primary">HOME</a>
+        <a href="#hubs" class="hover:text-primary">BLOGGER</a>
+        <a href="#training" class="hover:text-primary">NEW</a>
+        <a href="#contact" class="py-2 text-white bg-primary rounded-md text-center">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Rooted in Heritage. Growing into the Future.</h2>
+          <p class="mt-4 text-lg text-slate-600">From the hand-carved panels of Galle to the eco-furniture studios of Kandy, Sri Lanka’s woodcraft story runs deep. But as global markets evolve, our artisans must evolve too.
+            LANKA WOODCRAFT empowers local timber and furniture manufacturers to embrace technology, sustainability, and modern design keeping our island’s artistry alive and globally competitive.</p>
+
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+            <li class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="100"><span class="text-primary mt-1">●</span> Empower artisans with digital tools and design skills</li>
+            <li class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="200"><span class="text-primary mt-1">●</span> Create shared Tech Hubs for affordable access to CNC, laser, and 3D tools</li>
+            <li class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="300"><span class="text-primary mt-1">●</span> Launch certification paths for sustainable sourcing and quality assurance</li>
+            <li class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="400"><span class="text-primary mt-1">●</span> Help makers tell their stories to global buyers</li>
+          </ul>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#contact" class="px-4 py-2 rounded-md bg-primary text-white animate__animated animate__pulse animate__infinite">Get Support</a>
+            <a href="#about" class="px-4 py-2 rounded-md border border-slate-200">ARTICLE</a>
+          </div>
+        </div>
+
+
+
+
+        
+
+        <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img class="w-full object-cover hero-img" src="image/cover1.jpg" alt="wood workshop">
+          </div>
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            <img class="w-full rounded-lg shadow-sm" src="image/cover2tool.jpg" alt="carpentry tools" data-aos="zoom-in">
+            <img class="w-full rounded-lg shadow-sm" src="image/cover3tool.jpg" alt="furniture detail" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <br>
+    <br>
+    <h3 class="text-2xl font-bold mb-4" data-aos="fade-up">INTRO</h3>
+    <br>
+    <p class="text-slate-600 leading-relaxed mb-4" data-aos="fade-up" data-aos-delay="100">
+      Every curve of a chair, every polished edge of a table, holds the story of a craftsman’s hands. Yet today, the world moves faster  demanding designs that are smarter, greener, and globally competitive. WOODSPRING exists to bridge that gap 
+      where age-old skills meet cutting-edge tools, and wood becomes wonder once again.
+    </p>
+    <p class="text-slate-600 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+      Local producers face technical and organizational challenges...
+    </p>
+  </section>
+
+      
+  </section>
+  <section id="hubs" class="w-full bg-gradient-to-b from-emerald-50 to-white py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-24">
+  
+      <!-- Title -->
+      <div class="text-center" data-aos="fade-up">
+        <h3 class="text-4xl font-extrabold text-emerald-800 mb-6 tracking-tight">
+          Where Every Grain Tells a New Story
+        </h3>
+        <p class="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          From forest roots to modern factories, Sri Lanka’s timber journey blends tradition, craftsmanship, and technology.
+          Each grain tells a story of skill, sustainability, and innovation building a bridge between heritage and the future.
+        </p>
+      </div>
+  
+      <!-- 1️⃣ GRAINVERSE -->
+      <div class="flex flex-col lg:flex-row items-center gap-10" data-aos="fade-up">
+        <div class="flex-1">
+          <h4 class="text-2xl font-semibold text-emerald-700 mb-4">GRAINVERSE</h4>
+          <p class="text-slate-700 leading-relaxed text-lg mb-6 text-justify">
+            Deep in Sri Lanka's quiet forests, where sunlight filters through leaves and time respects nature’s pace, a quiet revolution begins.
+            <strong>GRAINVERSE</strong> is where the past and future meet, grain by grain.
+            For centuries, artisans have shaped timber into stories of faith, culture, and identity from the carvings of Kandyan temples to the furniture of Moratuwa.
+          </p>
+          <p class="text-slate-700 leading-relaxed text-lg text-justify">
+            Yet today, the soft rhythm of our ancestors’ craft is challenged by mass production.
+            The goal is not to abandon tradition, but to prove that this human craftsmanship deserves preservation and elevation.
+          </p>
+        </div>
+        <div class="flex-1">
+          <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/carvings.jpg" alt="Traditional wood carvings workshop">
+        </div>
+      </div>
+  
+      <!-- 2️⃣ The Soul of Wood -->
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="150">
+        <div class="flex-1">
+          <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/cnv.jpg" alt="Modern CNC training for artisans">
+        </div>
+        <div class="flex-1">
+          <h4 class="text-2xl font-semibold text-emerald-700 mb-4">The Soul of Wood. The Science of Tomorrow.</h4>
+          <p class="text-slate-700 leading-relaxed text-lg mb-6 text-justify">
+
+            <strong>GRAINVERSE</strong> is more than a brand it’s an ecosystem uniting artisans, engineers, and designers.
+            With technology, Sri Lankan timber processing can evolve while honoring its cultural roots.
+          </p>
+          <p class="text-slate-700 leading-relaxed text-lg mb-6 text-justify">
+            Imagine a carpenter in Matale guiding a CNC router to reproduce his grandfather’s carving, or a designer in Colombo crafting furniture in 3D before the first cut.
+          </p>
+          <p class="text-slate-700 leading-relaxed text-lg text-justify">
+            This is innovation with roots  where ancestral skill meets digitalization, and every piece tells a timeless story.
+          </p>
+        </div>
+      </div>
+  
+      <!-- 3️⃣ Bridging Gaps, Future Hope -->
+      <div class="flex flex-col lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex-1">
+          <h4 class="text-2xl font-semibold text-emerald-700 mb-4">Bridging Gaps, Future Hope</h4>
+          <p class="text-slate-700 leading-relaxed text-lg text-justify">
+            The Sri Lankan timber and furniture industry stands at a crossroads between commitment and demand.
+            Outdated machinery slows progress, while skill shortages limit innovation.
+            Global buyers now demand eco-certification, precision, and sustainable scalability  creating pressure on local workshops to adapt or fall behind.
+          </p>
+        </div>
+        <div class="flex-1">
+          <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/future.jpg" alt="Modern timber production in Sri Lanka">
+        </div>
+      </div>
+  
+      <!-- 4️⃣ Reimagining the Production Chain -->
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="250">
+        <div class="flex-1">
+          <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/futur2.jpg" alt="Smart factory with digital wood processing">
+        </div>
+        <div class="flex-1">
+          <h4 class="text-2xl font-semibold text-emerald-700 mb-4">Reimagining the Production Chain</h4>
+          <p class="text-slate-700 leading-relaxed text-lg mb-6 text-justify">
+            The strength of Sri Lanka’s timber and furniture sector lies in its people  but progress depends on process.
+            Each stage of the value chain, from sawing and drying to finishing and export, must embrace modernization.
+          </p>
+          <p class="text-slate-700 leading-relaxed text-lg text-justify">
+            Digital inventory systems, precision cutting, and sustainable sourcing can minimize waste and maximize profitability.
+            Emerging technologies  from 3D scanning to robotic finishing  are transforming workshops into smart, connected facilities that combine tradition with innovation.
+          </p>
+        </div>
+      </div>
+  
+            <!-- 5 Bridging Gaps, Future Hope -->
+            <div class="flex flex-col lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex-1">
+                <h4 class="text-2xl font-semibold text-emerald-700 mb-4">Bridging Skill Gaps and Building Capacity</h4>
+                <p class="text-slate-700 leading-relaxed text-lg text-justify">
+                  Modernization means little without skilled people to drive it.
+                  Many workers in timbermills and furniture workshops still stay on inherited knowledge rather than technical training.
+                  To bridge this gap, national programs, technical institutes, and industry partnerships can introduce certified courses in timber processing technology, machinery maintenance, lean production, and sustainable design.
+                  
+                  When knowledge flows freely between the mill and the workshop, every worker from saw operator to designer becomes part of a intergrated, of future workforce.
+                  
+                </p>
+              </div>
+              <div class="flex-1">
+                <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/skill.jpg" alt="Modern timber production in Sri Lanka">
+              </div>
+            </div>
+
+
+                  <!-- 6 Reimagining the Production Chain -->
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="250">
+        <div class="flex-1">
+          <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/sustain.jpg" alt="Smart factory with digital wood processing">
+        </div>
+        <div class="flex-1">
+          <h4 class="text-2xl font-semibold text-emerald-700 mb-4">Sustainability: The Foundation of Global Value
+
+          </h4>
+          <p class="text-slate-700 leading-relaxed text-lg mb-6 text-justify">
+            Sri Lanka’s forests are its living capital. 
+Promoting FSC-certified timber, reforestation , and zero-waste utilization will not only preserve resources but also attract international buyers seeking ethical products and earning global trust.
+
+          </p>
+          <p class="text-slate-700 leading-relaxed text-lg text-justify">
+            
+Every timber offcuts can be reused as panels or energy sources, turning waste into opportunity.
+A greener process isn’t just good for the planet  it’s good for business.
+          </p>
+        </div>
+      </div>
+
+ <!-- 7 Bridging Gaps, Future Hope -->
+ <div class="flex flex-col lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="200">
+  <div class="flex-1">
+    <h4 class="text-2xl font-semibold text-emerald-700 mb-4">Sri Lanka to the World</h4>
+    <p class="text-slate-700 leading-relaxed text-lg text-justify">
+      Every nation has timber.
+But only Sri Lanka has the artistry to make it sing. The island not as a small market, but as a creative powerhouse.
+We are crafting a new identity for Sri Lankan timber: eco-smart, globally competitive, and proudly rooted in culture.
+
+From rural workshops to international showrooms, It's shaping a new story for our industry one that balances innovation with integrity, profit with purpose, and craftsmanship with conscience.The label “Made in Sri Lanka” can stand for precision, beauty, and environmental responsibility.
+
+
+    </p>
+  </div>
+  <div class="flex-1">
+    <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/sl to world.jpg" alt="Modern timber production in Sri Lanka">
+  </div>
+</div>
+
+                  <!-- 8 Reimagining the Production Chain -->
+                  <div class="flex flex-col-reverse lg:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="250">
+                    <div class="flex-1">
+                      <img class="rounded-2xl shadow-xl w-full h-[480px] object-cover" src="image/shaping.jpg" alt="Smart factory with digital wood processing">
+                    </div>
+                    <div class="flex-1">
+                      <h4 class="text-2xl font-semibold text-emerald-700 mb-4">Shaping the future  One Grain at a Time
+            
+                      </h4>
+                      <p class="text-slate-700 leading-relaxed text-lg mb-6 text-justify">
+                        From forest to furniture, from raw grain to refined design Sri Lanka’s timber story is being rewritten.
+                        Technology gives it speed. Sustainability gives it strength . Creativity gives it soul.
+                      </p>
+                      <p class="text-slate-700 leading-relaxed text-lg text-justify">
+                        
+                        GRAINVERSE captures this harmony: a universe of grains, people, and possibilities.
+                        It is the vision of an industry rising where every log, every line, and every artisan’s touch tells a story of transformation.
+                        
+                    
+                        
+          
+                      </p>
+                    </div>
+                  </div>
+
+    </div>
+  </section>
+  
+
+
+
+
+
+  <!-- BENEFITS & CTA -->
+  <section id="training" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-bold mb-4">Something Inspiring Is Taking Shape...</h3>
+        <p class="text-slate-600 leading-relaxed mb-4">We’re crafting our next story — one that blends wood, design, and innovation.
+          Stay tuned for our new article: “Designing the Future: How Timber Innovation Redefines Sustainability.”.</p>
+        <a href="#contact" class="px-4 py-2 rounded-md bg-primary text-white">NEXT</a>
+      </div>
+      <div data-aos="fade-left">
+        <img class="w-full rounded-xl shadow-lg" src="image/comming.jpg" alt="benefits image">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact" class="bg-slate-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+        <p>Email: Kashyapaonline@gmail.com</p>
+        <p>Phone: +94 71 035 6852</p>
+        <p>Address: UWU, Sri Lanka</p>
+      </div>
+      <form class="flex flex-col gap-3" data-aos="fade-up">
+        <input type="text" placeholder="Name" class="px-3 py-2 rounded-md text-slate-800">
+        <input type="email" placeholder="Email" class="px-3 py-2 rounded-md text-slate-800">
+        <textarea placeholder="Message" class="px-3 py-2 rounded-md text-slate-800"></textarea>
+        <button type="submit" class="px-4 py-2 rounded-md bg-primary text-white">Send Message</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

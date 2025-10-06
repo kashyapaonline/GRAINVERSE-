@@ -1,0 +1,177 @@
+/* Root color variables */
+:root {
+  --tw-primary: #0f766e;
+}
+
+/* Custom Tailwind overrides */
+.bg-primary { background-color: var(--tw-primary); }
+.text-primary { color: var(--tw-primary); }
+
+/* Hero image height */
+.hero-img { height: 420px; }
+
+
+/* blog article style/* --- Article Section Styling --- */
+#hubs {
+  background: #fefefe;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: #1e293b;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+/* --- Title --- */
+#hubs h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+#hubs h3::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #0f766e, #22c55e);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* --- Article Cards --- */
+#hubs .p-6 {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+#hubs .p-6:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Subheadings --- */
+#hubs h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f766e;
+  border-left: 4px solid #0f766e;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* --- Paragraphs --- */
+#hubs p {
+  font-size: 1rem;
+  color: #475569;
+  text-align: justify;
+  text-indent: 2em;
+  transition: color 0.3s ease;
+}
+
+#hubs .p-6:hover p {
+  color: #0f172a;
+}
+
+/* --- Images --- */
+#hubs img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#hubs .p-6:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Responsive Typography --- */
+@media (max-width: 768px) {
+  #hubs h3 {
+    font-size: 1.6rem;
+  }
+  #hubs h4 {
+    font-size: 1.1rem;
+  }
+  #hubs p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ==========================
+  NAVBAR STYLING
+========================== */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+header a > div:first-child {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #10b981, #14b8a6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+header a > div:first-child:hover {
+  transform: scale(1.1);
+}
+
+/* Logo Text */
+header h1 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #065f46; /* Dark emerald */
+}
+
+header p {
+  font-size: 0.75rem;
+  color: #6b7280; /* Gray-500 */
+  margin-top: -0.125rem;
+}
+
+/* Desktop menu */
+header nav a {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #4b5563; /* Gray-700 */
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #10b981; /* Emerald */
+}
+
+/* Header text color to white */
+header, 
+header a h1,
+header a p,
+header a > div:first-child {
+  color: #ffffff; /* White text */
+}
+
+/* Optional: adjust logo background for contrast */
+header a > div:first-child {
+  background-color: #10b981; /* Emerald green for logo circle */
+}
